@@ -1,0 +1,456 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Ẩn thanh cuộn ngang */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ẩn thanh cuộn dọc trên các phần tử khác */
+.element::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #FFFFFF;
+}
+
+/* header */
+
+header {
+    position: absolute;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+    background: #ED7200;
+    box-shadow: 0px 4px 35px rgba(162, 58, 0, 0.75);
+    border-radius: 0% 0% 100% 100% / 0% 0% 50% 50%;
+}
+
+header .logo {
+    width: 35%;
+}
+
+header a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+header .row .col:nth-of-type(2) a:hover {
+    border: 2px solid #FFFFFF;
+    border-radius: 33px;
+    padding: 8px 22px;
+}
+
+/* background */
+
+main {
+    width: 100vw;
+    /* 100% chiều rộng của viewport */
+    height: 100vh;
+    /* 100% chiều cao của viewport */
+    background: radial-gradient(97.91% 60.14% at 50% 50%, #FFDB7E 0%, #FF7A00 100%);
+}
+
+main .background {
+    margin: auto;
+    background-image: url('../images/bg.png');
+    background-size: 100% 100%;
+    width: 90%;
+    height: 99%;
+}
+
+/* home page */
+
+.homepage .imgs img {
+    position: absolute;
+}
+
+.homepage .img-1 {
+    width: 90px;
+    top: 10%;
+    right: 40%;
+}
+
+.homepage .img-2 {
+    width: 120px;
+    top: 17%;
+    left: 43%;
+}
+
+.homepage .img-3 {
+    width: 130px;
+    bottom: 1%;
+    right: 3%;
+}
+
+.homepage .img-4 {
+    width: 90px;
+    bottom: 0%;
+    left: 33%;
+}
+
+.homepage .img-5 {
+    width: 130px;
+    top: 35%;
+    right: 0%;
+}
+
+.homepage .img-6 {
+    width: 120px;
+    top: 20%;
+    left: 1%;
+}
+
+.homepage .img-7 {
+    width: 245px;
+    bottom: 4%;
+    left: 0%;
+    z-index: 1;
+}
+
+.homepage .img-8 {
+    width: 600px;
+    top: 2%;
+    right: 4%;
+}
+
+.homepage .content {
+    position: absolute;
+    top: 15%;
+    left: 13%;
+}
+
+.homepage .content span {
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.homepage .content img {
+    width: 125px;
+}
+
+.homepage .book {
+    background-image: url('../images/homepage/Frame.png');
+    background-size: 100% 100%;
+    width: 75%;
+    height: 56%;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homepage .book .title {
+    background-image: url('../images/homepage/Group.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: -4%;
+    right: 7.8%;
+    height: 14%;
+    width: 20%;
+}
+
+.homepage .book .title span {
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.homepage .news {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    height: 90%;
+    width: 54%;
+}
+
+.homepage .news p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #23221F;
+    opacity: 0.7;
+}
+
+.homepage .news .starts p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: -20px;
+    color: #23221F;
+    opacity: 0.8;
+
+    display: flex;
+    align-items: center;
+}
+
+.homepage .news .starts img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.homepage .form {
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    height: 80%;
+    width: 33.5%;
+}
+
+.homepage .form div {
+    margin-bottom: 15px;
+}
+
+.homepage .package select {
+    background: #FFFFFF;
+    box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 0.5);
+    border-radius: 10px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 85%;
+    margin-right: auto;
+    padding: 8px;
+}
+
+.button-3d {
+    width: 40px;
+    height: 35px;
+    background: #FFDE32;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 6px 0 #F9B842;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button-3d img {
+    width: 50%;
+}
+
+.button-3d:hover {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 #F9B842;
+}
+
+.button-3d:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #F9B842;
+}
+
+.homepage .form input {
+    background: #FFFFFF;
+    box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 0.5);
+    border-radius: 10px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-right: auto;
+    padding: 8px;
+    width: 100%;
+}
+
+.homepage .tickets .ticket {
+    width: 35%;
+}
+
+.homepage .tickets .date {
+    width: 45%;
+}
+
+.no-spinners::-webkit-inner-spin-button,
+.no-spinners::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.button-submit {
+    width: 250px;
+    height: 40px;
+    background: #FF000A;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 6px 0 #BD000B;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.button-submit:hover {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 #BD000B;
+}
+
+.button-submit:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #BD000B;
+}
+
+/* event page */
+
+.eventpage {
+    background-image: url('../images/eventpage/event_bg.png');
+    position: absolute;
+    background-size: 100% 100%;
+    width: 87%;
+    height: 80%;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.decorate {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.decorate img {
+    width: 25%;
+}
+
+.eventpage .title h1 {
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+
+.eventpage .carousel .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.eventpage .carousel {
+    margin: auto;
+    width: 88%;
+}
+
+.eventpage .carousel .item .card {
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(109, 46, 0, 0.35);
+    margin: 12px;
+}
+
+.eventpage .carousel .card .card-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    color: #23221F;
+}
+
+.eventpage .carousel .card .card-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.eventpage .carousel .card .card-date {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 5px;
+    display: flex;
+    align-items: center;
+    color: #444444;
+}
+
+.eventpage .carousel .card .card-date img {
+    width: 15px;
+}
+
+.eventpage .carousel .card .card-price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #FA7D09;
+}
+
+.eventpage .carousel .card .button-submit {
+    width: 150px;
+    height: 30px;
+    line-height: 10px;
+    font-size: 15px;
+    box-shadow: 0 3px 0 #BD000B;
+}
+
+.eventpage .carousel-wrapper .button-3d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-wrapper {
+    position: relative;
+}
+
+.carousel-wrapper .prev-btn img {
+    width: 15px;
+    transform: rotate(90deg);
+}
+
+.carousel-wrapper .next-btn img {
+    width: 15px;
+    transform: rotate(-90deg);
+}
+
+.slick-prev,
+.slick-next {
+    visibility: hidden;
+    display: none;
+}
