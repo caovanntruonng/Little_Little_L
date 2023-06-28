@@ -1,0 +1,1161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Ẩn thanh cuộn ngang */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ẩn thanh cuộn dọc trên các phần tử khác */
+.element::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #FFFFFF;
+}
+
+/* header */
+
+header {
+    position: absolute;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+    background: #ED7200;
+    box-shadow: 0px 4px 35px rgba(162, 58, 0, 0.75);
+    border-radius: 0% 0% 100% 100% / 0% 0% 50% 50%;
+}
+
+header .logo {
+    width: 35%;
+}
+
+header a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+header .row .col:nth-of-type(2) a:hover {
+    border: 2px solid #FFFFFF;
+    border-radius: 33px;
+    padding: 8px 22px;
+}
+
+/* background */
+
+main {
+    width: 100vw;
+    /* 100% chiều rộng của viewport */
+    height: 100vh;
+    /* 100% chiều cao của viewport */
+    background: radial-gradient(97.91% 60.14% at 50% 50%, #FFDB7E 0%, #FF7A00 100%);
+}
+
+main .background {
+    margin: auto;
+    background-image: url('../images/bg.png');
+    background-size: 100% 100%;
+    width: 90%;
+    height: 99%;
+}
+
+/* home page */
+
+.homepage .imgs img {
+    position: absolute;
+}
+
+.homepage .img-1 {
+    width: 90px;
+    top: 10%;
+    right: 40%;
+}
+
+.homepage .img-2 {
+    width: 120px;
+    top: 17%;
+    left: 43%;
+}
+
+.homepage .img-3 {
+    width: 130px;
+    bottom: 1%;
+    right: 3%;
+}
+
+.homepage .img-4 {
+    width: 90px;
+    bottom: 0%;
+    left: 33%;
+}
+
+.homepage .img-5 {
+    width: 130px;
+    top: 35%;
+    right: 0%;
+}
+
+.homepage .img-6 {
+    width: 120px;
+    top: 20%;
+    left: 1%;
+}
+
+.homepage .img-7 {
+    width: 245px;
+    bottom: 4%;
+    left: 0%;
+    z-index: 1;
+}
+
+.homepage .img-8 {
+    width: 600px;
+    top: 2%;
+    right: 4%;
+}
+
+.homepage .content {
+    position: absolute;
+    top: 15%;
+    left: 13%;
+}
+
+.homepage .content span {
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.homepage .content img {
+    width: 125px;
+}
+
+.homepage .home-form-container {
+    background-image: url('../images/homepage/Frame.png');
+    background-size: 100% 100%;
+    width: 75%;
+    height: 56%;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homepage .home-form-container .title {
+    background-image: url('../images/homepage/Group.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: -4%;
+    right: 7.8%;
+    height: 14%;
+    width: 20%;
+    filter: drop-shadow(0px 4px 8px rgba(165, 15, 15, 0.45));
+}
+
+.homepage .home-form-container .title span {
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.homepage .news {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    height: 90%;
+    width: 54%;
+}
+
+.homepage .news p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #23221F;
+    opacity: 0.7;
+}
+
+.homepage .news .starts p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: -20px;
+    color: #23221F;
+    opacity: 0.8;
+
+    display: flex;
+    align-items: center;
+}
+
+.homepage .news .starts img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.homepage .form {
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    height: 80%;
+    width: 33.5%;
+}
+
+.homepage .form div {
+    margin-bottom: 15px;
+}
+
+.homepage .package select {
+    background: #FFFFFF;
+    box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 0.5);
+    border-radius: 10px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 85%;
+    margin-right: auto;
+    padding: 8px;
+}
+
+.button-3d {
+    width: 40px;
+    height: 35px;
+    background: #FFDE32;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 6px 0 #F9B842;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button-3d img {
+    width: 50%;
+}
+
+.button-3d:hover {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 #F9B842;
+}
+
+.button-3d:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #F9B842;
+}
+
+.homepage .form input {
+    background: #FFFFFF;
+    box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 0.5);
+    border-radius: 10px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-right: auto;
+    padding: 8px;
+    width: 100%;
+}
+
+.homepage .tickets .ticket {
+    width: 35%;
+}
+
+.homepage .tickets .date {
+    width: 45%;
+}
+
+.no-spinners::-webkit-inner-spin-button,
+.no-spinners::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.button-submit {
+    width: 250px;
+    height: 40px;
+    background: #FF000A;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 6px 0 #BD000B;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 41px;
+    color: #FFFFFF;
+    filter: drop-shadow(0px 4px 8px rgba(165, 15, 15, 0.45));
+}
+
+.button-submit:hover {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 #BD000B;
+    filter: drop-shadow(0px 0px 0px rgba(165, 15, 15, 0.45));
+}
+
+.button-submit:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #BD000B;
+    filter: drop-shadow(0px 0px 0px rgba(165, 15, 15, 0.45));
+}
+
+.select-option{
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+/* event page */
+
+.eventpage {
+    background-image: url('../images/eventpage/event_bg.png');
+    position: absolute;
+    background-size: 100% 100%;
+    width: 87%;
+    height: 80%;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.decorate {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.decorate img {
+    width: 25%;
+}
+
+.eventpage .title h1 {
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 65px;
+    color: #FFFFFF;
+}
+
+.eventpage .carousel .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.eventpage .carousel {
+    margin: auto;
+    width: 88%;
+}
+
+.eventpage .carousel .item .card {
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(109, 46, 0, 0.35);
+    margin: 12px;
+}
+
+.eventpage .carousel .card .card-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    color: #23221F;
+}
+
+.eventpage .carousel .card .card-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.eventpage .carousel .card .card-date {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 5px;
+    display: flex;
+    align-items: center;
+    color: #444444;
+}
+
+.eventpage .carousel .card .card-date img {
+    width: 15px;
+}
+
+.eventpage .carousel .card .card-price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #FA7D09;
+}
+
+.eventpage .carousel .card .button-submit {
+    width: 150px;
+    height: 30px;
+    line-height: 10px;
+    font-size: 15px;
+    box-shadow: 0 3px 0 #BD000B;
+}
+
+.eventpage .carousel .card .button-submit:hover {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 #BD000B;
+    filter: drop-shadow(0px 0px 0px rgba(165, 15, 15, 0.45));
+}
+
+.eventpage .carousel .card .button-submit:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #BD000B;
+    filter: drop-shadow(0px 0px 0px rgba(165, 15, 15, 0.45));
+}
+
+.eventpage .carousel-wrapper .button-3d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-wrapper {
+    position: relative;
+}
+
+.carousel-wrapper .prev-btn img {
+    width: 15px;
+    transform: rotate(90deg);
+}
+
+.carousel-wrapper .next-btn img {
+    width: 15px;
+    transform: rotate(-90deg);
+}
+
+.slick-prev,
+.slick-next {
+    visibility: hidden;
+    display: none;
+}
+
+/* event details page */
+
+.eventdetailspage {
+    background-image: url('../images/eventdetailspage/frame.png');
+    position: absolute;
+    background-size: 100% 100%;
+    width: 85%;
+    height: 78%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.eventdetailspage .row {
+    width: 95%;
+    height: 80%;
+}
+
+.eventdetailspage .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.eventdetailspage .card {
+    background: none;
+    width: 88%;
+    border: none;
+}
+
+.eventdetailspage .card .card-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.eventdetailspage .card .card-date {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #444444;
+}
+
+.eventdetailspage .card .card-date img {
+    width: 15px;
+}
+
+.eventdetailspage .card .card-price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #FA7D09;
+}
+
+.eventdetailspage .content span {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 18px;
+    display: inline-block;
+    column-count: 3;
+    column-gap: 30px;
+    overflow: auto;
+    max-height: max-content;
+}
+
+/* contact page */
+
+.contactpage {
+    position: absolute;
+    background-size: 100% 100%;
+    width: 87%;
+    height: 80%;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contactpage .title h1 {
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 65px;
+    color: #FFFFFF;
+}
+
+.contactpage .img {
+    position: absolute;
+    width: 18%;
+    bottom: -5%;
+    left: -7.4%;
+    z-index: 1;
+}
+
+.contactpage .contact-form-container {
+    position: absolute;
+    height: 80%;
+    width: 88%;
+    bottom: -5%;
+    left: 8%;
+}
+
+.contactpage .contact-form-container .row {
+    height: 100%;
+}
+
+.contactpage .contact-form-container .col-8 {
+    background-image: url('../images/contactpage/largecontactframe.png');
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.contactpage .contact-form-container .contact-form {
+    width: 90%;
+    height: 90%;
+}
+
+.contactpage .contact-form input,
+.contactpage .contact-form textarea {
+    background: #FFFFFF;
+    box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 0.5);
+    border-radius: 10px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-right: auto;
+    padding: 8px;
+}
+
+.contactpage span,
+.contactpage .form-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contactpage .input-small {
+    width: 40%;
+}
+
+.contactpage .input-large {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.contactpage .locked-textarea {
+    resize: none;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.contactpage .button-submit {
+    width: 300px;
+    filter: drop-shadow(0px 4px 8px rgba(165, 15, 15, 0.45));
+}
+
+.contactpage .button-submit:hover {
+    transform: translateY(3px);
+    filter: drop-shadow(0px 0px 0px rgba(165, 15, 15, 0.45));
+}
+
+.contactpage .button-submit:active {
+    transform: translateY(6px);
+    filter: drop-shadow(0px 0px 0px rgba(165, 15, 15, 0.45));
+}
+
+.contactpage .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.contactpage .contact-info-container .contact-info {
+    background-image: url('../images/contactpage/smallcontactframe.png');
+    background-size: 100% 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.contactpage .contact-info-container .contact-info img {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px 0 30px;
+}
+
+.contactpage .contact-info-container .contact-info h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #12265A;
+}
+
+.contactpage .contact-info-container .contact-info span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #23221F;
+    opacity: 0.7;
+}
+
+/* payment page */
+
+.paymentpage {
+    position: absolute;
+    background-size: 100% 100%;
+    width: 87%;
+    height: 80%;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.paymentpage .title h1 {
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 65px;
+    color: #FFFFFF;
+}
+
+.paymentpage .img {
+    position: absolute;
+    width: 17%;
+    bottom: -5%;
+    left: -7.4%;
+    z-index: 1;
+}
+
+.paymentpage .paymentpage-form-container {
+    background-image: url('../images/homepage/Frame.png');
+    background-size: 100% 100%;
+    width: 88%;
+    height: 80%;
+    position: absolute;
+    top: 64%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+.paymentpage .paymentpage-form-container .booking-information .book-form,
+.paymentpage .paymentpage-form-container .billing-information .bill-form {
+    margin-top: 50px;
+}
+
+.paymentpage .paymentpage-form-container .billing-information {
+    position: absolute;
+    width: 27%;
+    height: 100%;
+    right: 4.5%;
+}
+
+.paymentpage .paymentpage-form-container .booking-information {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 6%;
+}
+
+.paymentpage .paymentpage-form-container .title {
+    background-image: url('../images/homepage/Group.png');
+    background-size: 100% 100%;
+    filter: drop-shadow(0px 4px 8px rgba(165, 15, 15, 0.45));
+}
+
+.paymentpage .paymentpage-form-container .billing-information .title {
+    height: 60px;
+    width: 320px;
+    position: absolute;
+    top: -5%;
+    left: 4%;
+}
+
+.paymentpage .paymentpage-form-container .booking-information .title {
+    height: 60px;
+    width: 320px;
+    position: absolute;
+    top: -5%;
+}
+
+.paymentpage .paymentpage-form-container .title h1 {
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.paymentpage .paymentpage-form-container span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #23221F;
+    display: block;
+}
+
+.paymentpage .paymentpage-form-container input {
+    background: #FFFFFF;
+    box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 0.5);
+    border-radius: 10px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-right: auto;
+    padding: 8px;
+}
+
+.paymentpage .booking-information .book-form .number-of-tickets,
+.paymentpage .booking-information .book-form .number-of-tickets input {
+    width: 100px;
+}
+
+.paymentpage .booking-information .book-form .contact-info input,
+.paymentpage .booking-information .book-form .email input {
+    width: 350px;
+}
+
+.paymentpage .paymentpage-form-container .billing-information input {
+    width: 100%;
+}
+
+.paymentpage .paymentpage-form-container .bill-form .expiration-date input {
+    width: 80%;
+}
+
+.paymentpage .paymentpage-form-container .bill-form .cvv-cvc input {
+    width: 25%;
+}
+
+/* successful payment page */
+
+.successfulpaymentpage {
+    position: absolute;
+    background-size: 100% 100%;
+    width: 87%;
+    height: 80%;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.successfulpaymentpage .title h1 {
+    font-family: 'iCiel Koni';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 65px;
+    color: #FFFFFF;
+}
+
+.successfulpaymentpage .img {
+    position: absolute;
+    width: 17%;
+    bottom: 3%;
+    left: -7.4%;
+    z-index: 1;
+}
+
+.successfulpaymentpage .successfulpaymentpage-form-container {
+    background-image: url('../images/successfulpaymentpage/Frame.png');
+    background-size: 100% 100%;
+    width: 85%;
+    height: 74%;
+    position: absolute;
+    top: 60%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}
+
+.successfulpaymentpage .carousel-wrapper {
+    height: 80%;
+}
+
+.successfulpaymentpage .carousel-wrapper .carousel {
+    margin: auto;
+    width: 85%;
+}
+
+.successfulpaymentpage .carousel-wrapper .carousel .item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.successfulpaymentpage .carousel-wrapper .carousel .ticket {
+    width: 95%;
+    padding: 20px 0px;
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.successfulpaymentpage .carousel-wrapper .carousel .ticket .ticket-code {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 65px;
+    color: #000000;
+}
+
+.successfulpaymentpage .carousel-wrapper .carousel .ticket h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    color: #FFC226;
+}
+
+.successfulpaymentpage .carousel-wrapper .carousel .ticket p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 0px;
+    color: #000000;
+}
+
+.successfulpaymentpage .carousel-wrapper .carousel .ticket h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #23221F;
+}
+
+.successfulpaymentpage .carousel-wrapper .carousel .ticket img {
+    margin: auto;
+}
+
+.successfulpaymentpage .carousel-wrapper .carousel .ticket .qr {
+    width: 40%;
+}
+
+.successfulpaymentpage .carousel-wrapper .carousel .ticket .tick {
+    width: 13%;
+}
+
+.successfulpaymentpage .successfulpaymentpage-form-container .container {
+    width: 86%;
+}
+
+.successfulpaymentpage .successfulpaymentpage-form-container .ticket-count {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #23221F;
+}
+
+.successfulpaymentpage .successfulpaymentpage-form-container .current-page {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #23221F;
+    opacity: 0.5;
+}
+
+.successfulpaymentpage .download-email-buttons {
+    position: absolute;
+    width: 100%;
+    bottom: -5%;
+    display: flex;
+    justify-content: center;
+}
+
+.successfulpaymentpage .download-email-buttons .button-submit {
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 0 #BD000B;
+}
+
+.successfulpaymentpage .download-email-buttons .button-submit:hover {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 #BD000B;
+    filter: drop-shadow(0px 0px 0px rgba(165, 15, 15, 0.45));
+}
+
+.successfulpaymentpage .download-email-buttons .button-submit:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #BD000B;
+    filter: drop-shadow(0px 0px 0px rgba(165, 15, 15, 0.45));
+}
+
+/* calendar */
+
+.flatpickr-calendar {
+    padding: 16px;
+    width: 360px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 45px rgba(109, 46, 0, 0.35);
+    border-radius: 32px;
+}
+
+.flatpickr-calendar .flatpickr-months {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    margin-left: 20px;
+}
+
+.flatpickr-calendar .flatpickr-prev-month,
+.flatpickr-calendar .flatpickr-next-month {
+    display: flex;
+    align-items: start;
+}
+
+.flatpickr-calendar .flatpickr-monthDropdown-months,
+.flatpickr-calendar .cur-year {
+    font-weight: 800;
+}
+
+.flatpickr-calendar .flatpickr-innerContainer {
+    justify-content: center;
+}
+
+.flatpickr-calendar .flatpickr-month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flatpickr-calendar .flatpickr-current-month {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 36px;
+    color: #23221F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.flatpickr-calendar .flatpickr-weekdaycontainer {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FF8A00;
+}
+
+.flatpickr-calendar .flatpickr-day {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.flatpickr-calendar .dayContainer .selected {
+    background: #FF8A00;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* popup */
+/* success */
+#success .modal-content {
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 13px;
+    width: max-content;
+}
+
+#success .button-close,
+#success .button-close:hover,
+#success .button-close:focus {
+    box-shadow: none;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: #FF8A00;
+    border: none;
+    background: none;
+    background-size: 100% 100%;
+    width: 15px;
+    height: 15px;
+}
+
+#success .modal-body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #23221F;
+    opacity: 0.7;
+}
+
+/* fail */
+
+#fail .modal-dialog {
+    width: max-content;
+}
+
+#fail .modal-content {
+    background: #FFFFFF;
+    border-radius: 32px;
+    top: 75px;
+}
+
+#fail .modal-header {
+    background: #FF8B15;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    position: relative;
+    height: 60px;
+}
+
+#fail .modal-img {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#fail .modal-img img {
+    width: 75%;
+}
+
+#fail .modal-body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #23221F;
+    opacity: 0.7;
+    padding: 25px;
+}
+
+#successButton,
+#failButton {
+    display: none;
+    visibility: hidden;
+}
